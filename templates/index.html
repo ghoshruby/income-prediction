@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Income Predictions</title>
+  
+  
+</head>
+
+<body style="background: rgb(22, 159, 238);">
+ <div class="login">
+	<h1>Income Prediction</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+     <form action="{{url_for('predict')}}"method="post">
+    	<input type="text" name="Year" placeholder="Year" required="required" />
+       
+        <button type="submit" class="btn btn-primary btn-block btn-large">Submit</button>
+    </form>
+   
+
+ </div>
+ <br>
+ <br>
+ {{prediction_text}}
+</body>
+</html>
